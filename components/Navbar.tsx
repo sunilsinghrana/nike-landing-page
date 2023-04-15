@@ -33,7 +33,7 @@ function Navbar() {
 
   return (
     <motion.nav variants={navbarAnimation} initial="init" animate="visible" className="flex justify-around items-center">
-          <motion.img variants={navbarItemAnimation} src="/public/nikelogo.png" alt="logo" width={80} height={40} />
+          <motion.img variants={navbarItemAnimation} src="/public/assets/nikelogo.png" alt="logo" width={80} height={40} />
           <motion.ul variants={navbarItemAnimation} className="flex justify-center items-center">
             <li className="text-lg font-bold mx-3 cursor-pointer">HOME</li>
             <li className="text-lg font-bold mx-3 cursor-pointer">ABOUT</li>
