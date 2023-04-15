@@ -1,6 +1,10 @@
 import "./App.css";
 import Navbar from '../components/Navbar'
 import { motion } from "framer-motion";
+import shoeImage from '../public/assets/nikeshoes.png'
+import shoeBanner01 from '../public/assets/pngegg (1).png'
+import shoeBanner02 from '../public/assets/pngegg (2).png'
+import shoeBanner03 from '../public/assets/pngegg.png'
 
 function App() {
   const nikeText = {
@@ -88,18 +92,18 @@ function App() {
           </div>
         </motion.div>
         <motion.div variants={nikeShoes} initial="init" animate="visible" className="relative z-10 left-16 flex justify-center items-center">
-          <img src="/public/assets/nikeshoes.png" alt="shoes_image" width={900} height={500} />
+          <img src={shoeImage} alt="shoes_image" width={900} height={500} />
         </motion.div>
       </div>
       <motion.div variants={sizeAvailableAnimation} initial="init" animate="visible" className="absolute bottom-12 left-36 bg-transparent h-[250px] w-[40%] z-10 flex rounded-md">
         <div className="w-fit bg-white m-4">
-          <img src="/public/assets/pngegg (1).png" alt="shoesbanner" width={700} height={700} />
+          <img src={shoeBanner01} alt="shoesbanner" width={700} height={700} />
         </div>
         <div className="w-fit bg-white m-4">
-          <img src="/public/assets/pngegg (2).png" alt="shoesbanner"  width={700} height={700} />
+          <img src={shoeBanner02} alt="shoesbanner"  width={700} height={700} />
         </div>
         <div className="w-fit bg-white m-4">
-          <img src="/public/assets/pngegg.png" alt="shoesbanner"  width={700} height={700} />
+          <img src={shoeBanner03} alt="shoesbanner"  width={700} height={700} />
         </div>
       </motion.div>
     </div>
